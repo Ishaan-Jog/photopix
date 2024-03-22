@@ -1,0 +1,163 @@
+body{
+    background-image: url("img/bg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: "Arimo", serif;
+}
+
+.menu{
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    backdrop-filter: blur(0px);
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: inline;
+    width: 12.5%;
+    text-align: center;
+    backdrop-filter: blur(0px);
+    font-size: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.icon-img{
+    border-radius: 15px;
+    height: 60px;
+    width: 100px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.hover-underline-animation:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.hover-underline-animation-active:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform: scaleX(1);
+}
+
+.ttl{
+    font-family: "Adamina", serif;
+    text-decoration: solid;
+    font-size: 100px;
+    margin-left: 70px;
+} 
+.sub-ttl{
+    font-family: "Adamina", serif;
+    text-decoration: solid;
+    font-size: 30px;
+    margin-left: 90px;
+    width: 50%;
+}
+
+.desc{
+    font-family: "Adamina", serif;
+    margin-left: 20px;
+    font-size: large;
+}
+
+.eg-img{
+    border-radius: 60px;
+    transition-duration: 0.3s;
+    margin: 10px;
+}
+
+.content-txt{
+    margin-left: 90px;
+    font-family: "Arimo", serif;
+    font-size: 20px;
+    width: 50%;
+}
+
+.contact-card{
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 15px;
+    display: inline-block;
+    margin-left: 90px;
+    cursor: pointer;
+    width: 250px;
+    margin-top: 50px;
+    color: white;
+    transition-duration: 0.3s;
+}
+.contact-card:hover{
+    box-shadow: 0px 2px 2px 2px;
+}
+
+.contact-icon{
+    height: 50px;
+    width: 50px;
+    display: inline;
+    vertical-align: middle;
+}
+.contact-txt{
+    display: inline;
+    font-family: "Arimo", serif;
+    font-size: 20px;
+    vertical-align: middle;
+    margin-left: 5px;
+    text-decoration: none;
+    color: white;
+}
+.email-card{
+    width: 300px;
+}
+
+.horizontal-img{
+    height: 340px;
+    width: 550px;
+    border-radius: 15px;
+    border: 2px solid white;
+    margin: 20px;
+}
+.vertical-img{
+    height: 420px; 
+    width: 270px;
+    border-radius: 20px;
+    border: 2px solid white;
+    margin: 20px;
+}
+
+.footer-text, .footer-link{
+    font-family: "Arimo", serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+.footer{
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-top: 50px;
+    background-color: black;
+}
+.footer-img{
+    height: 25px;
+    width: 130px;
+}
